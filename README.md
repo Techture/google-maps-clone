@@ -7,4 +7,3 @@ What I'm experimenting with:
 • Directions API - turn-by-turn instructions using four different Mapbox routing profiles: mapbox/driving-traffic, mapbox/driving, mapbox/walking, and mapbox/cycling
 
 This was a fun deep dive into using Mapbox and its Directions API.
-# google-maps-clone
