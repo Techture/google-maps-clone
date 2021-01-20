@@ -7,7 +7,7 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
 function setupMap(centerPosition) {
   const map = new mapboxgl.Map({
     accessToken: mapToken,
-    container: "map!",
+    container: "map",
     style: "mapbox://styles/mapbox/streets-v11",
     center: centerPosition,
     zoom: 15,
