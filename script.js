@@ -1,12 +1,10 @@
-const { mapToken } = require("./secrets");
-
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
   enableHighAccuracy: true,
 });
 
 function setupMap(centerPosition) {
   const map = new mapboxgl.Map({
-    accessToken: mapToken,
+    accessToken: MAPBOX_ACCESS_TOKEN,
     container: "map",
     style: "mapbox://styles/mapbox/streets-v11",
     center: centerPosition,
