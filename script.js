@@ -1,5 +1,4 @@
-const MAPBOX_ACCESS_TOKEN =
-  "pk.eyJ1IjoiYmxha2VmZXJtIiwiYSI6ImNrOXN2ZDNmZzE5aXQzaHFxaDUxcGdlYmwifQ.ak6k55Ri8gkbO2mLg3LmPw";
+const { mapToken } = require("./secrets");
 
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
   enableHighAccuracy: true,
@@ -7,7 +6,7 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
 
 function setupMap(centerPosition) {
   const map = new mapboxgl.Map({
-    accessToken: MAPBOX_ACCESS_TOKEN,
+    accessToken: mapToken,
     container: "map",
     style: "mapbox://styles/mapbox/streets-v11",
     center: centerPosition,
